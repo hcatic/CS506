@@ -104,6 +104,27 @@ We will use the **Airbnb Open Data** available on Kaggle:
 - **Histograms:**
   - Display distributions of key numerical features like `price`, `minimum nights`, and `reviews per month`.
 
+## PCA Analysis
+
+### Purpose of PCA
+
+Principal Component Analysis (PCA) is utilized in this project to reduce the dimensionality of the dataset while preserving as much variance as possible. By transforming the dataset into a set of uncorrelated variables (principal components), we can more easily visualize and interpret the relationships between different features.
+
+### PCA Implementation Steps
+
+1. **Data Preparation**:
+   - The dataset was cleaned and preprocessed, including handling missing values and converting categorical variables into numerical format using one-hot encoding.
+
+2. **Feature Selection**:
+   - Relevant numerical features included latitude, longitude, price, service fee, minimum nights, number of reviews, reviews per month, review rate number, calculated host listings count, and availability.
+
+3. **PCA Execution**:
+   - PCA was performed using the `PCA` class from the `sklearn.decomposition` module. A pipeline was created that included preprocessing steps followed by PCA application.
+
+4. **Results**:
+   - The first two principal components were plotted to visualize the distribution of the Airbnb listings.
+   - The explained variance for each component was calculated, revealing how much variance is captured by the first and second components.
+
 ## Test Plan
 
 ### What Is the Test Plan?
