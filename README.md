@@ -6,13 +6,13 @@ https://youtu.be/g-1oD2hXkjE
 
 ## Description of the Project
 
-This project aims to help potential Airbnb hosts identify the best locations and property types in New York City (NYC) to maximize their return on investment (ROI). By analyzing the Airbnb Open Data—which includes detailed information about listings, hosts, and pricing—we will develop models to predict potential rental income and occupancy rates. This analysis will provide data-driven recommendations for investors looking to enter the Airbnb market in NYC.
+This project aims to help potential Airbnb hosts identify the best locations and property types in New York City (NYC) to maximize their income. By analyzing the Airbnb Open Data—which includes detailed information about listings, hosts, and pricing—we will develop models to predict predict rental costs based on listing features. This analysis will provide data-driven recommendations for investors looking to enter the Airbnb market in NYC.
 
 ## Clear Goals
 
 ### Primary Goal
 
-- **Recommend optimal neighborhoods and property types in NYC for hosting on Airbnb to maximize ROI.**
+- **Predict rental income based on listing features in NYC.**
 
 ### Secondary Goals
 
