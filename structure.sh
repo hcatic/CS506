@@ -8,8 +8,7 @@ project-root/
 ├── notebooks/ # Source code
 │ ├── eda.ipynb # Feature engineering functions
 │ ├── preprocessing.ipynb # Data cleaning and preprocessing functions
-│ ├── feature_engineering.ipynb # Feature engineering functions
-│ └── modeleling.ipynb # Model training script
+│ └── models.ipynb # Model training script
 │ ├── visualsations.ipynb # Feature engineering functions
 ├── visualizations/ # Visualization files
 │ ├── .pngs # Saved plots and visualizations
