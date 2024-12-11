@@ -295,4 +295,4 @@ Our final model achieved an **R² of approximately 0.64**, explaining roughly 64
 These findings and recommendations aim to help hosts optimize pricing strategies and improve revenue generation while maintaining competitiveness in the Airbnb marketplace.
 
 ### Work Cited 
-- [Airbnb Open Data]([https://www.kaggle.com/datasets/samiraalipour/gene-expression-omnibus-geo-dataset-gse68086](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data/data))
+- [Airbnb Open Data](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data/data))
