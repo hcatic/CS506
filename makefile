@@ -38,7 +38,7 @@ $(VENV)/bin/activate:
 
 requirements.txt: $(VENV)/bin/activate
 	$(BIN)/pip install -r requirements.txt
-	$(BIN)/pip install jupyter
+	$(BIN)/pip install jupyter pytest
 
 # Data processing target that runs notebooks in sequence
 data: setup
@@ -49,6 +49,10 @@ data: setup
 # Updated run target to use modeling.py instead of main.py
 run: setup
 	$(BIN)/python modeling.py
+
+# Test target to run test_functions.py
+test: setup
+	$(BIN)/pytest test_functions.py
 
 clean:
 	rm -rf $(VENV)
