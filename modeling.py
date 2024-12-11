@@ -59,7 +59,7 @@ mae_scores = []
 mse_scores = []
 execution_times = []
 
-"""for name, regressor in models:
+for name, regressor in models:
     start_time = time.time()
 
     # Fit the model
@@ -92,7 +92,7 @@ execution_times = []
     print(f"R^2 Score: {round(r2, 4)} ({name})")
     print(f"MAE: {round(mae, 4)} ({name})")
     print(f"MSE: {round(mse, 4)} ({name})")
-    print(f"Execution Time: {round(execution_time, 2)} seconds\n")"""
+    print(f"Execution Time: {round(execution_time, 2)} seconds\n")
 
 
 def plot_learning_curves(estimator, X, y, cv=5, train_sizes=np.linspace(0.1, 1.0, 10), 
@@ -414,7 +414,7 @@ def analyze_models(models, X_train, X_test, y_train, y_test, feature_names,
         print("\n" + "="*50 + "\n")
 
 
-#analyze_models(models, X_train, X_test, y_train, y_test, X.columns,
+analyze_models(models, X_train, X_test, y_train, y_test, X.columns,
               #rmse_scores, r2_scores, mae_scores, execution_times)
 
 
@@ -422,7 +422,7 @@ def analyze_models(models, X_train, X_test, y_train, y_test, feature_names,
 # Models that performed poorly in previous steps were removed 
 # (Random Forrest takes significantly longer as other similarly performant models)
 
-models = [#('GBM', GradientBoostingRegressor()),
+models = [('GBM', GradientBoostingRegressor()),
           ("XGBoost", XGBRegressor(objective='reg:squarederror')),
           ("CatBoost", CatBoostRegressor(verbose=False))]
 
@@ -438,7 +438,7 @@ trained_models = []
 
 # Define the hyperparameters for each model
 param_grids = {
-    #'GBM': {'n_estimators': [100, 200, 300], 'learning_rate': [0.1, 0.15, 0.2]},
+    'GBM': {'n_estimators': [100, 200, 300], 'learning_rate': [0.1, 0.15, 0.2]},
     'XGBoost': {'n_estimators': [100, 200, 300], 'learning_rate': [0.1, 0.15, 0.2]},
     'CatBoost': {'iterations': [100, 200, 300], 'learning_rate': [0.1, 0.15, 0.2], 'depth': [4, 6]}
 }
