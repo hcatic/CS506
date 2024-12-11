@@ -225,4 +225,54 @@ XGBoost was ultimately chosen as the best-performing model due to its ability to
 
 ---
 
+### Conclusion, Findings, and Recommendations
+
+Our final model achieved an **R² of approximately 0.64**, explaining roughly 64% of the variance in Airbnb prices. The model's **RMSE (Root Mean Squared Error) is 0.4024 on the logged price**, which translates to approximately **1.50 times the original price scale** (since RMSE can be interpreted as the factor by which predictions deviate on average after exponentiation). Below, we summarize the key findings and provide actionable recommendations based on the most important features impacting pricing. These findings are based on the top 5 most important features according to our final model and are accompanied by the relevant visuals.
+
+**Top 10 Most Important Features for XGBoost**
+
+---
+
+#### **Key Findings**
+
+##### **1. `room_type_Private room`**
+- **Impact:** Listings offering a "Private room" are significantly less expensive compared to "Entire home/apt" listings (the implicit baseline). This reduction in price reflects the lower level of privacy and exclusivity provided to guests. 
+- **Recommendation:** Hosts offering private rooms should emphasize affordability and value in their marketing to attract budget-conscious travelers.
+
+##### **2. `room_type_Shared room`**
+- **Impact:** "Shared room" listings are the least expensive option, as guests share spaces with others. This trade-off results in a substantial price drop compared to both "Entire home/apt" and "Private room" listings.
+- **Recommendation:** Hosts with shared room listings should target ultra-budget travelers and highlight amenities that compensate for the lack of privacy, such as community experiences or unique shared spaces.
+
+##### **3. `neighbourhood_group_Manhattan`**
+- **Impact:** Listings located in Manhattan command significantly higher prices due to the borough’s desirability, centrality, and access to cultural and business hubs. 
+- **Recommendation:** Hosts in Manhattan should emphasize location advantages and highlight nearby attractions to justify premium pricing. Hosts outside Manhattan may benefit from highlighting competitive pricing and unique experiences.
+
+##### **4. `longitude`**
+- **Impact:** Properties located further west (lower longitude values) tend to have higher prices, likely reflecting proximity to desirable locations such as waterfront areas or central business districts.
+- **Recommendation:** Hosts in western Manhattan or near waterfront areas should leverage their location as a key selling point in their listings.
+
+##### **5. `occupancy_rate`**
+- **Impact:** The relationship between occupancy rate and price is complex. Initially, higher occupancy rates are associated with lower prices, as hosts adjust pricing to boost bookings. However, at extreme values, the price stabilizes, suggesting optimal pricing strategies. 
+- **Recommendation:** Hosts should analyze their occupancy rates and experiment with dynamic pricing to balance occupancy and revenue, particularly during peak and off-peak seasons.
+
+---
+
+#### **Additional Insights and Recommendations**
+
+1. **`availability_ratio`**: Higher availability ratios are linked to more competitive pricing. Hosts should ensure consistent availability, especially during high-demand periods.
+2. **`minimum_nights`**: Listings with lower minimum stay requirements may attract more bookings, but hosts should carefully balance pricing to avoid undercutting revenue.
+3. **`log_host_listings`**: Hosts with larger portfolios often benefit from optimized pricing. Small-scale hosts should explore tools or strategies used by professional managers to improve pricing effectiveness.
+4. **`latitude`**: North-south positioning correlates with pricing, reflecting neighborhood desirability. Hosts in less desirable areas should focus on competitive pricing or unique experiences.
+5. **`listing_duration_months`**: Longer listing durations are associated with more competitive pricing. New hosts should focus on building strong initial reviews and leveraging promotional pricing to establish their listings.
+
+---
+
+### Recommendations for Future Strategy
+
+- **Dynamic Pricing Tools:** Leverage technology to implement dynamic pricing strategies that adjust based on occupancy, seasonality, and competition.
+- **Marketing Emphasis:** Highlight unique selling points for listings in high-demand areas, such as proximity to attractions or waterfront views.
+- **Data-Driven Decisions:** Continuously analyze pricing data and adjust based on trends in occupancy and guest preferences.
+- **Enhanced Guest Experience:** For lower-priced options like shared or private rooms, focus on creating memorable guest experiences to boost reviews and repeat bookings.
+
+These findings and recommendations aim to help hosts optimize pricing strategies and improve revenue generation while maintaining competitiveness in the Airbnb marketplace.
 
