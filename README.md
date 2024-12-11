@@ -231,6 +231,8 @@ Our final model achieved an **R² of approximately 0.64**, explaining roughly 64
 
 **Top 10 Most Important Features for XGBoost**
 
+![top 10 xgboost](/results/top_10_features_importance.png)
+
 ---
 
 #### **Key Findings**
@@ -239,21 +241,30 @@ Our final model achieved an **R² of approximately 0.64**, explaining roughly 64
 - **Impact:** Listings offering a "Private room" are significantly less expensive compared to "Entire home/apt" listings (the implicit baseline). This reduction in price reflects the lower level of privacy and exclusivity provided to guests. 
 - **Recommendation:** Hosts offering private rooms should emphasize affordability and value in their marketing to attract budget-conscious travelers.
 
+![private room](/results/room_type_Private%20room_box_whisker_plot.png)
+
 ##### **2. `room_type_Shared room`**
 - **Impact:** "Shared room" listings are the least expensive option, as guests share spaces with others. This trade-off results in a substantial price drop compared to both "Entire home/apt" and "Private room" listings.
 - **Recommendation:** Hosts with shared room listings should target ultra-budget travelers and highlight amenities that compensate for the lack of privacy, such as community experiences or unique shared spaces.
+
+![shared room](/results/room_type_Shared%20room_box_whisker_plot.png)
 
 ##### **3. `neighbourhood_group_Manhattan`**
 - **Impact:** Listings located in Manhattan command significantly higher prices due to the borough’s desirability, centrality, and access to cultural and business hubs. 
 - **Recommendation:** Hosts in Manhattan should emphasize location advantages and highlight nearby attractions to justify premium pricing. Hosts outside Manhattan may benefit from highlighting competitive pricing and unique experiences.
 
+![manhattan](/results/neighbourhood_group_Manhattan_box_whisker_plot.png)
+
 ##### **4. `longitude`**
 - **Impact:** Properties located further west (lower longitude values) tend to have higher prices, likely reflecting proximity to desirable locations such as waterfront areas or central business districts.
 - **Recommendation:** Hosts in western Manhattan or near waterfront areas should leverage their location as a key selling point in their listings.
 
+![longitude](/results/longitude_continuous_partial_dependence.png)
+
 ##### **5. `occupancy_rate`**
 - **Impact:** The relationship between occupancy rate and price is complex. Initially, higher occupancy rates are associated with lower prices, as hosts adjust pricing to boost bookings. However, at extreme values, the price stabilizes, suggesting optimal pricing strategies. 
 - **Recommendation:** Hosts should analyze their occupancy rates and experiment with dynamic pricing to balance occupancy and revenue, particularly during peak and off-peak seasons.
+![occupancy_rate](/results/occupancy_rate_continuous_partial_dependence.png)
 
 ---
 
