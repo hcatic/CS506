@@ -227,7 +227,7 @@ XGBoost was ultimately chosen as the best-performing model due to its ability to
 
 ### Conclusion, Findings, and Recommendations
 
-Our final model achieved an **R² of approximately 0.64**, explaining roughly 64% of the variance in Airbnb prices. The model's **RMSE (Root Mean Squared Error) is 0.4024 on the logged price**, which translates to approximately **1.50 times the original price scale** (since RMSE can be interpreted as the factor by which predictions deviate on average after exponentiation). Below, we summarize the key findings and provide actionable recommendations based on the most important features impacting pricing. These findings are based on the top 5 most important features according to our final model and are accompanied by the relevant visuals.
+Our final model achieved an **R² of approximately 0.64**, explaining roughly 64% of the variance in Airbnb prices. We feel this degree of explanability is relatively high considering the lack of strong correlations between our numerical features and our predicted feature `price`. The model's **RMSE (Root Mean Squared Error) is 0.4024 on the logged price**, which translates to approximately **1.50 times the original price scale** (since RMSE can be interpreted as the factor by which predictions deviate on average after exponentiation). Below, we summarize the key findings and provide actionable recommendations based on the most important features impacting pricing. These findings are based on the top 5 most important features according to our final model and are accompanied by the relevant visuals.
 
 **Top 10 Most Important Features for XGBoost**
 
