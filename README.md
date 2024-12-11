@@ -225,6 +225,13 @@ XGBoost was ultimately chosen as the best-performing model due to its ability to
 
 ---
 
+### Progress Since Midterm
+- Implemented an array of different models such as XGBoost and CatBoost models to compare performance.
+- We returned back to our feature engineering and enhanced it with additional occupancy and availability metrics. We also reviewed more in depth our EDA to see what other bits of engineering we could perform.
+- Plotted more visualizations and looked into creating actionable insights for hosts through feature importance.
+
+---
+
 ### Conclusion, Findings, and Recommendations
 
 Our final model achieved an **R² of approximately 0.64**, explaining roughly 64% of the variance in Airbnb prices. We feel this degree of explanability is relatively high considering the lack of strong correlations between our numerical features and our predicted feature `price`. The model's **RMSE (Root Mean Squared Error) is 0.4024 on the logged price**, which translates to approximately **1.50 times the original price scale** (since RMSE can be interpreted as the factor by which predictions deviate on average after exponentiation). Below, we summarize the key findings and provide actionable recommendations based on the most important features impacting pricing. These findings are based on the top 5 most important features according to our final model and are accompanied by the relevant visuals.
@@ -287,3 +294,5 @@ Our final model achieved an **R² of approximately 0.64**, explaining roughly 64
 
 These findings and recommendations aim to help hosts optimize pricing strategies and improve revenue generation while maintaining competitiveness in the Airbnb marketplace.
 
+### Work Cited 
+- [Airbnb Open Data](https://www.kaggle.com/datasets/samiraalipour/gene-expression-omnibus-geo-dataset-gse68086)
